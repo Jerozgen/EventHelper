@@ -79,7 +79,7 @@ object FreezerMessages {
     }
 
     fun unfreeze(invoker: PluginContainer, trg: Player) {
-        trg.sendMessage(Text.of(pluginPrefix, Text_colorized("|y|Вас были разморожены плагином |w|" + invoker.name)))
+        trg.sendMessage(Text.of(pluginPrefix, Text_colorized("|y|Вы были разморожены плагином |w|" + invoker.name)))
     }
 
     fun freeze(invoker: PluginContainer, frozen: FrozenPlayers.Frozen) {
