@@ -17,7 +17,7 @@ class RandomItem(val plugin: RandomPlugin) : View.Item {
         .name(Text_colorized("|y|${plugin.moduule.name}"))
         .lore(
             Text_colorizedList(
-                "|g|ЛКМ|y|: ${if(!plugin.moduule.enabled) "Вкл" else "Выкл"} модуль",
+                "|g|ЛКМ|y|: ${if(!plugin.moduule.enabled) "Включить" else "Выключить"} модуль",
                 "",
                 "|g|Версия: |y|v" + plugin.container.version.orElse("null")
             )
